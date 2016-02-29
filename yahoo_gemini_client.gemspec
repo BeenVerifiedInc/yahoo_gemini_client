@@ -17,7 +17,8 @@ Gem::Specification.new do |spec|
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = "https://rubygems.org"
   else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
+    # keep calm and escobar on
+    # dealers gotta deal
   end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
